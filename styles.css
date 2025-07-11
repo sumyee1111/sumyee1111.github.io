@@ -1,0 +1,283 @@
+/* 全局样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  color: #333;
+  line-height: 1.6;
+  background: #f9f9f9;
+}
+
+/* 头部/欢迎部分 */
+.hero {
+  background: url('../assets/images/hero-bg.jpg') no-repeat center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 6rem;
+  color: #ffd700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content nav {
+  margin: 1rem 0;
+}
+
+.hero-content nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 1.2rem;
+}
+
+.hero-content nav a:hover {
+  color: #ffd700;
+}
+
+.hero-content .btn {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  background: #ffd700;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.hero-content .btn:hover {
+  background: #e6c200;
+}
+
+/* 通用部分样式 */
+.section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.section h2 {
+  color: #ffd700;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+/* 关于部分 */
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.profile-img {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.about-text h2 {
+  color: #333;
+  font-size: 2rem;
+}
+
+.about-text p {
+  color: #666;
+  margin: 1rem 0;
+}
+
+.social-links a {
+  color: #333;
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #ffd700;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+/* 技能部分 */
+.skills-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.skills-grid img {
+  width: 50px;
+  height: auto;
+  filter: grayscale(0);
+  transition: filter 0.3s;
+}
+
+.skills-grid img:hover {
+  filter: grayscale(0);
+}
+
+/* 教育部分 */
+.education-item {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 1rem auto;
+  color: #333;
+}
+
+.education-item h3 {
+  color: #ffd700;
+  margin-bottom: 0.5rem;
+}
+
+.education-item p {
+  color: #666;
+}
+
+/* 项目部分 */
+.project-item {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 1rem auto;
+  color: #333;
+}
+
+.project-item h3 {
+  color: #ffd700;
+  margin-bottom: 0.5rem;
+}
+
+.project-item p {
+  color: #666;
+}
+
+.project-item b {
+  color: #000; /* Description 黑色加粗 */
+  font-weight: bold;
+}
+
+.project-item ul {
+  color: #4A4A4A; /* 分点内容灰黑色 */
+  text-align: left; /* 左对齐 */
+  margin-top: 0.5rem;
+  margin-left: 20px; /* 确保项目符号有适当缩进 */
+}
+
+.project-item li {
+  color: #4A4A4A; /* 确保列表项也是灰黑色 */
+  margin-bottom: 0.5rem; /* 列表项间距 */
+}
+
+/* 工作经验部分 */
+.work-item {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 1rem auto;
+  color: #333;
+}
+
+.work-item h3 {
+  color: #ffd700;
+  margin-bottom: 0.5rem;
+}
+
+.work-item ul {
+  color: #666;
+  text-align: left; /* 左对齐 */
+  margin-left: 20px; /* 确保项目符号有适当缩进 */
+  margin-top: 0.5rem;
+}
+
+/* 联系部分 */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form input,
+form textarea {
+  margin-bottom: 1rem;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+form .btn {
+  background: #ffd700;
+  border: none;
+  padding: 0.7rem;
+  color: #333;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form .btn:hover {
+  background: #e6c200;
+}
+
+/* 页脚 */
+footer {
+  background: #333;
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 4rem;
+  }
+
+  .hero-content nav a {
+    font-size: 1rem;
+    margin: 0 0.5rem;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-img {
+    width: 150px;
+  }
+
+  .section h2 {
+    font-size: 2rem;
+  }
+}
